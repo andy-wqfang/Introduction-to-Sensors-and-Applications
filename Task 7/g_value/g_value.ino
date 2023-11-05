@@ -19,8 +19,8 @@ void loop()
   int xg = (float)x;                          //converts the mapped value into acceleration in terms of "g"
   //Serial.print("X: ");
   //Serial.print(xvalue);
-  Serial.print(xg);                                       //prints value of acceleration in X direction
-  Serial.print(" ,");
+  Serial.println(xg);                                       //prints value of acceleration in X direction
+  //Serial.print(" ,");
 //  Serial.print("g   ");                                   //prints "g"
     
  // yvalue = analogRead(ypin);
@@ -33,14 +33,14 @@ void loop()
 //  Serial.print(yg);
  // Serial.print("g   "); 
   
-  zvalue = analogRead(zpin);
-  int z = map(zvalue,400, 600, -10, 10);
-  int zg = (float)z;
- // Serial.print("\t"); 
-  //Serial.print(" Z: ");
-  //Serial.print(zvalue);
- // Serial.println();
-  Serial.println(zg);
+//   zvalue = analogRead(zpin);
+//   int z = map(zvalue,400, 600, -10, 10);
+//   int zg = (float)z;
+//  // Serial.print("\t"); 
+//   //Serial.print(" Z: ");
+//   //Serial.print(zvalue);
+//  // Serial.println();
+//   Serial.println(zg);
 //  Serial.println("g   ");
   delay(100);
 }
